@@ -29,9 +29,12 @@ public class Persona {
 			this.email = email;
 			}
 
+	public static void exVerificarDNI(String dni) {
+		if(!dni.matches("\\d{8}")) {
+			throw new ExVerificarDNI();
+		}
+	}
 	
-
-
 	
 	@Override
 	public String toString() {
