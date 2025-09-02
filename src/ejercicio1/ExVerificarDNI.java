@@ -9,7 +9,7 @@ public class ExVerificarDNI extends RuntimeException {
 
 	@Override
 	public String getMessage() {
-		return "DNI inválido";
+		return "El DNI debe tener exactamente 8 digitos numericos.";
 	}
 	
 }

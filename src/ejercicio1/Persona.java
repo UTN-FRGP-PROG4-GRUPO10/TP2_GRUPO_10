@@ -30,7 +30,9 @@ public class Persona {
 			}
 
 	public static void exVerificarDNI(String dni) {
-		if(!dni.matches("\\d{8}")) {
+		
+		String dniLimpio = dni.trim();
+		if(!dniLimpio.matches("\\d{8}")) {
 			throw new ExVerificarDNI();
 		}
 	}
@@ -48,7 +50,8 @@ public class Persona {
 		return dni;
 	}
 	public void setDni(String dni) {
-		this.dni = dni;
+		exVerificarDNI(dni);
+		this.dni = dni.trim();
 	}
 	public String getNombre() {
 		return nombre;
