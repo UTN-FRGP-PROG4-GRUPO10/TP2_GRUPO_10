@@ -1,9 +1,10 @@
 package ejercicio1;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Empleado extends Persona implements Comparable<Empleado> {
-
+	
 	private final int legajo;
 	private String puesto;
 	private static int contadorLegajo = 1000;
@@ -35,7 +36,10 @@ public class Empleado extends Persona implements Comparable<Empleado> {
 	
 	@Override
 	public int compareTo(Empleado o) {
-		return this.getDni().compareTo(o.getDni());
+		int empleado=this.getDni().compareTo(o.getDni());
+		if (empleado==0) return 0;
+			return Integer.compare(getLegajo(), o.getLegajo()); 
+		
 	}
 
 	@Override
