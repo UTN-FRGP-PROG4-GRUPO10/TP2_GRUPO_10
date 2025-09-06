@@ -1,16 +1,20 @@
 package ejercicio2;
 
-public class Oficinas implements IEdificio {
+public class EdificiodeOficinas implements IEdificio {
 
 	private int CantidadOficinas;
 	private double Superficie;
 	
-	public Oficinas() {}
+	public EdificiodeOficinas() {}
 	
-	public Oficinas(int CantidadOficinas) {
+	public EdificiodeOficinas(int CantidadOficinas) {
 		this.CantidadOficinas = CantidadOficinas;
 	}
 	
+	public EdificiodeOficinas(int CantidadOficinas, Double Superficie) {
+		this.CantidadOficinas = CantidadOficinas;
+		this.Superficie = Superficie;
+	}
 
 	public int getCantidadOficinas() {
 		return CantidadOficinas;
