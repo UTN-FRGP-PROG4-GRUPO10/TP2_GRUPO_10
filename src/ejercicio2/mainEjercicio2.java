@@ -10,19 +10,24 @@ public class mainEjercicio2 {
 		Polideportivo P2 = new Polideportivo ("Poli2", 222.0);
 		Polideportivo P3 = new Polideportivo("Poli3", 333.0);
 		
+		EdificiodeOficinas EO1 = new EdificiodeOficinas(10, 555.0);
+        EdificiodeOficinas EO2 = new EdificiodeOficinas(25, 12055.0);
 		
-		ArrayList<Polideportivo> ListaPoli = new ArrayList<>();
+		
+		ArrayList<IEdificio> ListaEdificios = new ArrayList<>();
 		
 		
-		ListaPoli.add(P1);
-		ListaPoli.add(P2);
-		ListaPoli.add(P3);
+		ListaEdificios.add(P1);
+		ListaEdificios.add(P2);
+		ListaEdificios.add(P3);
+		ListaEdificios.add(EO1);
+		ListaEdificios.add(EO2);
 		
-		Iterator<Polideportivo> it = ListaPoli.iterator();
+		Iterator<IEdificio> it = ListaEdificios.iterator();
 		
 		while (it.hasNext()) {
-            Object Polideportivo = it.next();
-            System.out.println(Polideportivo.toString());
+            Object IEdificio = it.next();
+            System.out.println(IEdificio.toString());
 		
 		}
 	}
