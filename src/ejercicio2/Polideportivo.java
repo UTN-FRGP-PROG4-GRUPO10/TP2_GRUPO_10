@@ -47,7 +47,7 @@ public class Polideportivo implements IEdificio, IInstalacionDeportiva  {
 
 	@Override
 	public String toString() {
-		return "Polideportivo [Superficie=" + Superficie + ", NombreEdificio=" + NombreEdificio + "]";
+		return "Polideportivo [Superficie=" + getSuperficieEdificio() + ", NombreEdificio=" + NombreEdificio + ", TipoInstalacion=" + TipodeInstalacion + "]";
 	}
 
 	@Override

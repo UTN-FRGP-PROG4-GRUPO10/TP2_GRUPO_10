@@ -27,7 +27,7 @@ public class EdificiodeOficinas implements IEdificio {
 
 	@Override
 	public String toString() {
-		return "Oficinas [CantidadOficinas=" + CantidadOficinas + "]";
+		return "Oficinas [Superficie=" + getSuperficieEdificio() + ", CantidadOficinas=" + CantidadOficinas + "]";
 	}
 
 	@Override
